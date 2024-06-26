@@ -1,2 +1,3 @@
-# myChatApp
-This is a chat app built using react and firebase
+# Lama Dev Chat App Starter template
+jdn
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
