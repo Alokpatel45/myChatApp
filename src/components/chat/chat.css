@@ -1,0 +1,145 @@
+.chat{
+    flex:2;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .top{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            span{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                color: gray;
+            }
+        }
+    }
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.center{
+    padding: 20px;
+    flex:1;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    gap: 20px;
+    .message{
+        max-width: 70%;
+        display: flex;
+        gap: 20px;
+    }
+    .own{
+        align-self: flex-end;
+        max-width: 70%;
+        display: flex;
+        gap: 20px;
+        .texts{
+            p{
+                background-color: aqua;
+            }
+        }
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .texts{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        gap: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        p{
+            padding: 20px;
+            background-color: rgb(102, 102, 199,0.3);
+            border-radius: 10px;
+        }
+        span{
+            font-size:12px;
+        }
+    }
+}
+.bottom{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    margin-top:auto ;
+    .icons{
+        gap: 20px;
+        display: flex;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+    input{
+        flex: 1;
+        background-color: gray;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 20px;
+        border-radius:  10px;
+        font-style: 16px;
+    }
+    .emoji{
+        position: relative;
+        .picher{
+            position: absolute;
+            bottom: 50px;
+            left:0;
+        }
+    }
+    .sendButton{
+        background-color: rgb(76, 76, 203);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:disabled{
+            background-color:darkred;
+            cursor: not-allowed;
+        }
+    }
+   
+}
